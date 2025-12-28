@@ -1,0 +1,21 @@
+document.getElementById('post-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const title = document.getElementById('title').value;
+    const content = document.getElementById('content').value;
+    const date = new Date().toLocaleDateString();
+    
+    const postHTML = `
+        <article class="post">
+            <h3>${title}</h3>
+            <p class="date">${date}</p>
+            <p>${content}</p>
+        </article>
+    `;
+    
+    document.getElementById('posts').insertAdjacentHTML('afterbegin', postHTML);
+    
+    // Clear form
+    document.getElementById('title').value = '';
+    document.getElementById('content').value = '';
+});

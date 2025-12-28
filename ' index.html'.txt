@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Daily Sports Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Daily Sports Journey</h1>
+        <p>Sharing my daily updates on sports, fitness, and games.</p>
+    </header>
+    
+    <main>
+        <section id="updates">
+            <h2>Recent Updates</h2>
+            <div id="posts">
+                <!-- Sample post -->
+                <article class="post">
+                    <h3>Day 1: Kickoff!</h3>
+                    <p class="date">October 10, 2023</p>
+                    <p>Started my sports journey with a basketball game. Scored 10 points! 🏀</p>
+                </article>
+            </div>
+        </section>
+        
+        <section id="add-post">
+            <h2>Add New Update</h2>
+            <form id="post-form">
+                <label for="title">Title (e.g., Workout Day):</label>
+                <input type="text" id="title" required>
+                
+                <label for="content">Your Update:</label>
+                <textarea id="content" rows="4" required></textarea>
+                
+                <button type="submit">Add Update</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 My Sports Journey. Made with ❤️</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
